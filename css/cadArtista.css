@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caprasimo&display=swap');
+
+/* Criando variáveis */
+:root {
+    --corPrincipal: #ede0d4;
+    --corSecundaria: #b08968;
+    --black: #000000;
+    --black2: #222222;
+    --textWhite: #ffffff;
+    --transition: all 0.3s ease;
+    --hover: #b08968;
+    --shadowCard: 15px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Tirando as margens */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Header */
+.cabecalho{
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+.cabecalho figure {
+    width: auto;
+    height: 70px;
+}
+
+.cabecalho figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navList li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.navList li a {
+    color: var(--textWhite);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color .3s ease;
+    letter-spacing: 2px;
+}
+
+.navList li a:hover {
+    color: #b08968;
+}
+
+
+/* CSS do codepen para o sidebar */
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.main-menu:hover, nav.main-menu.expanded {
+    width: 250px;
+    overflow: visible;
+}
+
+.main-menu {
+    background: #212121;
+    border-right: 2px solid #ffffff;
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    width: 60px;
+    overflow: hidden;
+    transition: width .05s linear;
+    transform: translateZ(0) scale(1,1);
+    z-index: 1000;
+}
+
+.main-menu > ul {
+    margin: 7px 0;
+}
+
+.main-menu li {
+    position: relative;
+    display: block;
+    width: 250px;
+}
+
+.main-menu li > a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: var(--textWhite);
+    font-family:  arial;
+    font-size: 14px;
+    text-decoration: none;
+    transform: translateZ(0) scale(1,1);
+    transition: all .1s linear;
+}
+
+.main-menu .nav-icon {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.main-menu .nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 190px;
+    font-family: 'Titillium Web', sans-serif;
+    left: 10px;
+}
+
+.main-menu > ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.no-touch .scrollable.hover {
+    overflow-y: hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+    overflow-y: auto;
+    overflow: visible;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+nav ul, nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li:hover > a, nav.main-menu li.active > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .no-touch .dashboard-page nav.dashboard-menu ul li:hover a, .dashboard-page nav.dashboard-menu ul li.active a {
+    color: #fff;
+    background-color: #000000;
+}
+
+.area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../imagens/bgCadastro.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 12% 30px 70px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.577);
+    margin: 50px 100px 20px 100px;
+    max-width: 90%;
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+    padding: 2%;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-size: 32px;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.campo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 0 20%;
+    box-sizing: border-box;
+}
+
+input {
+    margin-left: 5%;
+    width: 350px;
+    height: 90%;
+    border: none;
+    border-radius: 9999em; /*arredondando as bordas usando em para melhor resultado*/
+    padding: 15px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.UF {
+    margin-top: 4%;
+    margin-left: 12%;
+}
+
+.btn {
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+    border: none;
+    border-radius: 9999em;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #222222;
+    background-color: burlywood;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.categ {
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 15.9% 0 0;
+}
+
+.categ select {
+    width: 200px;
+    height: auto;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Rodapé do site */
+.rodape{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--black2);
+}
+
+.rodape .redes{
+    display: flex;
+    list-style: none;
+}
+
+.rodape .redes li{
+    margin-right: 20px;
+}
+
+.rodape .imgSocial{
+    width: 25px;
+    height: 25px;
+}
+
+.rodape p{
+    color: var(--textWhite);
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.rodape .imgLogo{
+    width: 40px;
+    height: auto;
+}

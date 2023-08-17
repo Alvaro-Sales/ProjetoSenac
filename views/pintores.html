@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para meu CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/pintores.css">
+
+    <!-- CDN Fontawesome -->
+    <script src="https://kit.fontawesome.com/cdb42214fe.js" crossorigin="anonymous"></script>
+
+    <!-- Título da página -->
+    <title>Da Raíz aos Frutos Alagoanos - Pintores</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <figure>
+            <img src="../imagens/logo.png" alt="Logomarca do projeto">
+        </figure>
+
+        <nav class="menu">
+            <ul class="navList">
+                <li><a href="#">Entrar</a></li>
+
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Cadastrar-se 
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+
+                    <div class="dropdown-content">
+                      <a href="../views/cadUser.html">Como Usuário</a>
+                      <a href="../views/cadArtista.html">Como Artista</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+	</header>
+
+    <section class="containerSidebar">
+        <div class="area"></div>
+        <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/etqbfrgp.json"
+                            trigger="hover"
+                            colors="outline:#000000,primary:#b4b4b4,secondary:#545454,tertiary:#b26836,quaternary:#b4b4b4"
+                            style="width:60px;height:60px">
+                        </lord-icon>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="artistas.html">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/dqxvvqzi.json"
+                            trigger="hover"
+                            colors="outline:#000000,primary:#f4b69c,secondary:#848484"
+                            style="width:60px;height:60px">
+                        </lord-icon>
+                        <span class="nav-text">Artistas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="artesaos.html">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/alzqexpi.json"
+                            trigger="hover"
+                            colors="primary:#000000,secondary:#242424,tertiary:#848484,quaternary:#e4e4e4,quinary:#b4b4b4"
+                            style="width:60px;height:60px">
+                        </lord-icon>
+                        <span class="nav-text">Artesãos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Escritores.html">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/qtqvorle.json"
+                        trigger="hover"
+                        colors="outline:#121331,primary:#646e78,secondary:#ebe6ef,tertiary:#4cb4fd"
+                        style="width:60px;height:60px">
+                    </lord-icon>
+                        <span class="nav-text">Escritores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="fotografos.html">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/mxddzdmt.json"
+                            trigger="hover"
+                            colors="outline:#121331,primary:#3a3347,secondary:#646e78,quaternary:#08a88a,quinary:#ffc738,senary:#ebe6ef"
+                            style="width:60px;height:60px">
+                        </lord-icon>
+                        <span class="nav-text">Fotográfos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pintores.html">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/kfutqnjo.json"
+                        trigger="hover"
+                        colors="primary:#f9c9c0,secondary:#000000"
+                        style="width:60px;height:60px">
+                    </lord-icon>
+                        <span class="nav-text">Pintores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="musicos.html">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ommvariz.json"
+                            trigger="hover"
+                            colors="primary:#4bb3fd,secondary:#c6c6c6,tertiary:#bababa,quaternary:#3a3347,quinary:#ebe6ef"
+                            style="width:60px;height:60px">
+                        </lord-icon>
+                        <span class="nav-text">Músicos</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="logout">
+                <li>
+                    <a href="#">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/twopqjaj.json"
+                            trigger="hover"
+                            colors="primary:#000000,secondary:#b4b4b4,tertiary:#f9c9c0,quaternary:#848484,quinary:#545454,senary:#a66037,septenary:#ede0d4"
+                            style="width:60px;height:60px">
+                        </lord-icon>
+                        <span class="nav-text">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+        <!-- Criando banner relacionado ao tema -->
+        <section class="banner"></section>
+
+        <section class="container">
+            <section>
+
+                <!-- Criando efeito de imagem para obras -->
+                <section class="sectEfeito">
+                    <figure>
+                        <img src="../imagens/pintores/EnioLins/MaceioSuasBombas.jpg" alt="Ênio Lins">
+
+                        <img src="../imagens/pintores/YaraPao/obra-yara.jpg" alt="Yara Pão">
+
+                        <img src="../imagens/pintores/PedroLucena/BAC.jpg" alt="Pedro Lucena">
+
+                        <img src="../imagens/pintores/EduardoBastos/obra-eduardo-2.jpeg" alt="Eduardo Bastos">
+
+                        <img src="../imagens/pintores/IsraelMelo/obra-israel-7.jpeg" alt="Israel Melo">
+
+                        <img src="../imagens/pintores/EduardoBastos/obra-eduardo-7.jpeg" alt="Eduardo Bastos">
+
+                    </figure>
+                </section>
+
+                <h1 class="tituloPage" id="Artesãos">
+                    <span>Pintores</span>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/kfutqnjo.json"
+                        trigger="hover"
+                        colors="primary:#f9c9c0,secondary:#000000"
+                        style="width:60px;height:60px">
+                    </lord-icon>
+                </h1>
+
+                <!-- Criando container para os cards de cantores -->
+                <div class="cards">
+                    <div class="card">
+
+                        <!-- Colocando imagem no css -->
+                        <div class="imgCard imgIsraelMelo"></div>
+
+                        <div class="textCard">
+                            <h2>Israel Melo</h2>
+
+                            <p>“Sinto uma conexão muito forte com a essência artística de Alagoas e um receptividade muito grande ao meu trabalho, e isso me deixa muito feliz, é um alento para a minha alma porque a arte vive para quem à contempla.”</p>
+
+                            <button class="btnCard">
+                                <a href="" target="_blank">Ver mais</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <!-- Colocando imagem com css -->
+                        <div class="imgCard imgEnioLins"></div>
+
+                        <div class="textCard">
+                            <h2>Ênio Lins</h2>
+
+                            <p>“Acho que todo mundo deveria exercitar uma forma de arte, as pessoas devem desenhar, pintar, cantar, dançar, recitar, isso faz muito bem ao ser humano, é algo que contribui para a saúde mental e física das pessoas, então a recomendação que digo para as pessoas mais jovens é essa: “FAÇA ALGUMA FORMA DE ARTE!"</p>
+
+                            <button class="btnCard">
+                                <a href="" target="_blank">Ver mais</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <!-- Colocando imagem com css -->
+                        <div class="imgCard imgYara"></div>
+
+                        <div class="textCard">
+                            <h2>Yara Pão</h2>
+
+                            <p>"A minha missão hoje é ser resistência, é crescer e é propagar a arte, seja ela por meio de outras pessoas, o meu próprio trabalho, a linguagem que eu carrego e os objetivos que estão empregados nas minhas produções, assim como nos cursos que ofereço, nas formações, nas palestras, principalmente para criança." </p>
+
+                            <button class="btnCard">
+                                <a href="" target="_blank">Ver mais</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <!-- Colocando imagem com css -->
+                        <div class="imgCard imgEduardo"></div>
+
+                        <div class="textCard">
+                            <h2>Eduardo Bastos</h2>
+
+                            <p>"Eu sou professor! Procuro ensinar aos meus alunos que devemos estudar, ler, se informar, não guardar para si o conhecimento e de alguma forma retribuir para a sociedade - melhorar a condição humana por aqui, o que aprendemos como técnicos e como seres humanos."</p> 
+                            <button class="btnCard">
+                                <a href="" target="_blank">Ver mais</a>
+                            </button>
+                        </div>
+                        
+                    </div>
+                
+                    <div class="card">
+
+                        <!-- Colocando imagem com css -->
+                        <div class="imgCard imgEvaLe"></div>
+
+                        <div class="textCard">
+                            <h2>Eva Le Campion</h2>
+
+                            <p>Eva Le Campion nasceu na capital alagoana em 16 de abril de
+                                1960. Filha de Edmond Le Campion, um ex-combatente da 2ª
+                                Guerra Mundial, com a artista plástica Maria José Le Campion
+                                Chalita, teve contato com o meio artístico muito cedo devido
+                                a veia artística de sua família; seu tio era o famoso pintor ala-
+                                goano Pierre Chalita.</p>
+
+                            <button class="btnCard">
+                                <a href="" target="_blank">Ver mais</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <ul class="redes">
+            <li><a href="#" target="_blank" title="Twitter"><img src="../imagens/contatos/iconTwitter.webp" class="imgSocial"></a></li>
+            <li><a href="#" target="_blank" title="Facebook"><img src="../imagens/contatos/iconFacebook.png" class="imgSocial"></a></li>
+            <li><a href="#" target="_blank" title="Instagram"><img src="../imagens/contatos/iconInstagram.png" class="imgSocial"></a></li>
+        </ul>
+        <p>Copyright &copy; 2023 - Senac Alagoas.</p>
+        <figure>
+            <img src="../imagens/logo.png" alt="Imagem Teste1" title="Logomarca" class="imgLogo" />
+        </figure>
+    </footer>
+
+
+    <!-- Script LordIcon -->
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</body>
+</html>

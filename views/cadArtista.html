@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN Fontawesome -->
+    <script src="https://kit.fontawesome.com/cdb42214fe.js" crossorigin="anonymous"></script>
+
+    <!-- Script para CDN do Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+    <!-- Link para o CSS do cadastro -->
+    <link rel="stylesheet" type="text/css" href="../css/cadArtista.css">
+
+    <!-- Título da página -->
+    <title>Cadastre-se</title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <figure>
+            <img src="../imagens/logo.png" alt="Logomarca do projeto">
+        </figure>
+
+        <nav class="menu">
+            <ul class="navList">
+                <li><a href="../index.html">Voltar</a></li>
+            </ul>
+        </nav>
+	</header>
+
+    <main>
+        <section class="containerSidebar">
+            <div class="area"></div>
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/etqbfrgp.json"
+                                trigger="hover"
+                                colors="outline:#000000,primary:#b4b4b4,secondary:#545454,tertiary:#b26836,quaternary:#b4b4b4"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/dqxvvqzi.json"
+                                trigger="hover"
+                                colors="outline:#000000,primary:#f4b69c,secondary:#848484"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <span class="nav-text">Artistas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/alzqexpi.json"
+                                trigger="hover"
+                                colors="primary:#000000,secondary:#242424,tertiary:#848484,quaternary:#e4e4e4,quinary:#b4b4b4"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <span class="nav-text">Artesãos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/qtqvorle.json"
+                            trigger="hover"
+                            colors="outline:#121331,primary:#646e78,secondary:#ebe6ef,tertiary:#4cb4fd"
+                            style="width:60px;height:60px">
+                        </lord-icon>
+                            <span class="nav-text">Escritores</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/mxddzdmt.json"
+                                trigger="hover"
+                                colors="outline:#121331,primary:#3a3347,secondary:#646e78,quaternary:#08a88a,quinary:#ffc738,senary:#ebe6ef"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <span class="nav-text">Fotográfos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/kfutqnjo.json"
+                            trigger="hover"
+                            colors="primary:#f9c9c0,secondary:#000000"
+                            style="width:60px;height:60px">
+                        </lord-icon>
+                            <span class="nav-text">Pintores</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/ommvariz.json"
+                                trigger="hover"
+                                colors="primary:#4bb3fd,secondary:#c6c6c6,tertiary:#bababa,quaternary:#3a3347,quinary:#ebe6ef"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <span class="nav-text">Cantores</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="logout">
+                    <li>
+                        <a href="#">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/twopqjaj.json"
+                                trigger="hover"
+                                colors="primary:#000000,secondary:#b4b4b4,tertiary:#f9c9c0,quaternary:#848484,quinary:#545454,senary:#a66037,septenary:#ede0d4"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <span class="nav-text">Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="container">
+            <h3>Cadastro do Artista</h3>
+      
+            <form action="">
+                  <div class="campo">
+                        <label for="">Nome:</label>    
+                        <input type="text" placeholder="Digite seu nome..." required>
+                  </div>
+      
+                  <div class="campo">
+                        <label for="">Sobrenome:</label>
+                        <input type="text" placeholder="Digite seu sobrenome..." required>
+                  </div>
+      
+                  <div class="campo">
+                        <label for="">Nome Artístico:</label>
+                        <input type="text" placeholder="Digite seu nome artístico">
+                  </div>
+      
+                  <div class="campo">
+                        <label for="">Usuário:</label>
+                        <input type="text" placeholder="Seu Nome de Usuário" required>
+                  </div>
+      
+                  <div class="campo">
+                        <label for="">E-mail:</label>
+                        <input type="email" placeholder="Digite seu e-mail..." required>
+                  </div> 
+      
+                  <div class="campo">
+                        <label for="">Senha:</label>
+                        <input type="password" placeholder="Digite a senha..." required>
+                  </div>
+      
+                  <div class="campo">
+                        <label for="">Confirmar Senha:</label>
+                        <input type="password" placeholder="Confirme a senha..." required>
+                  </div>
+      
+                  <div class="campo">
+                        <label for="">Telefone:</label>
+                        <input type="tel" maxlength="17" placeholder="Digite seu número...">
+                  </div>
+      
+                  <div class="campo">
+                        <label for="">Nacionalidade:</label>
+                        <input type="text" placeholder="Digite sua nacionalidade" required>
+                  </div>
+      
+                  <div class="campo">
+                        <label for="">UF:</label>
+                        <input type="text" placeholder="Seu Estado" required>
+                  </div>
+      
+                  <div class="categ">
+                        <label for="">Categoria:</label>
+                        <select name="" id="">
+                              <option value="0" selected>Selecione</option>
+                              <option value="1">Cantor</option>
+                              <option value="2">Pintor</option>
+                              <option value="3">Fotógrafo</option>
+                              <option value="4">Artesão</option>
+                              <option value="5">Escritor</option>
+                              <option value="6">Outros</option> 
+                        </select>
+                  </div>
+      
+                  <button class="btn" type="submit">Cadastrar</button>
+          </form>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <ul class="redes">
+            <li><a href="#" target="_blank" title="Twitter"><img src="../imagens/contatos/iconTwitter.webp" class="imgSocial"></a></li>
+
+            <li><a href="#" target="_blank" title="Facebook"><img src="../imagens/contatos/iconFacebook.png" class="imgSocial"></a></li>
+            
+            <li><a href="#" target="_blank" title="Instagram"><img src="../imagens/contatos/iconInstagram.png" class="imgSocial"></a></li>
+        </ul>
+        <p>Copyright &copy; 2023 - Senac Alagoas.</p>
+        <figure>
+            <img src="../imagens/logo.png" alt="Imagem Teste1" title="Logomarca" class="imgLogo" />
+        </figure>
+    </footer>
+
+
+    <!-- Add script LordIcon -->
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+    <!-- Add script Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Meu Javascript -->
+    <script src="script/main.js"></script>
+</body>
+</html>
